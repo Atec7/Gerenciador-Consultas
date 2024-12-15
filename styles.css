@@ -1,0 +1,154 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px; /* Ajuste para computadores */
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adiciona espaço entre os elementos */
+    margin-bottom: 10px;
+    justify-content: space-between; /* Distribui os botões de forma uniforme */
+}
+
+.input-group {
+    flex: 1 1 calc(33.333% - 10px); /* Ajuste para organizar os campos lado a lado em desktops */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin: 5px 0; /* Adiciona uma margem ao redor dos botões */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin: 5px; /* Adiciona uma margem ao redor dos botões */
+}
+
+button:hover {
+    background-color: #007bb5;
+}
+
+button:last-child {
+    background-color: #25D366;
+    margin-right: 0; /* Remove o espaço do último botão */
+}
+
+button:last-child:hover {
+    background-color: #22c35e;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex: 1 1 calc(50% - 10px); /* Ajuste para tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .input-group {
+        flex: 1 1 100%;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    button:last-child {
+        margin-bottom: 0;
+    }
+    
+    table {
+        min-width: 100%;
+    }
+}
